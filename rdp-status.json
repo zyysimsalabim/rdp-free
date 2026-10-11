@@ -1,6 +1,6 @@
 {
-  "active": false,
-  "hostname": "rdpfree-1",
+  "active": true,
+  "hostname": "rdpfree-3",
   "os": "Microsoft Windows Server 2022 Datacenter",
   "os_build": "10.0.20348",
   "os_style": "Windows 10 look",
@@ -8,13 +8,13 @@
   "rdp_user": "xyadmin",
   "rdp_listen": ":::3389 (svchost) | 0.0.0.0:3389 (svchost) + handshake ok via 127.0.0.1",
   "rdp_denyts": true,
-  "started_at": "2026-10-11T04:33:08Z",
-  "expires_at": "2026-10-11T10:28:08Z",
+  "started_at": "2026-10-11T05:05:17Z",
+  "expires_at": "2026-10-11T11:00:17Z",
   "duration_menit": 355,
-  "run_id": "38111693318",
+  "run_id": "38113341371",
   "run_attempt": "1",
-  "run_number": "1",
-  "run_url": "https://github.com/zyysimsalabim/rdp-free/actions/runs/38111693318",
+  "run_number": "3",
+  "run_url": "https://github.com/zyysimsalabim/rdp-free/actions/runs/38113341371",
   "mode": "bersih+win10",
   "win10": {
     "look": "ok",
@@ -42,69 +42,57 @@
     "note": "Host siap dipakai klien XyDesk Remote mode Koneksi RDP (Host+Port tunnel). Kunci WinStations\\RDP-Tcp sengaja TIDAK ditulis supaya listener 3389 tidak mati di runner GitHub."
   },
   "grafis": {
-    "mesa": "26.2.4",
+    "mode": "software",
+    "adapters": "Microsoft Hyper-V Video",
+    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
+    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
     "loader": "vulkan-1.dll 1.4.363.0 (LunarG)",
     "install": "mesa 26.2.4.0 [Mesa/X.org]",
-    "dir": "C:\\XyRDP\\grafis",
-    "debug": "",
     "vulkan": "llvmpipe (LLVM 23.1.2, 256 bits) (PHYSICAL_DEVICE_TYPE_CPU)",
     "opengl": "4.6 (Core Profile) Mesa 26.2.4 (git-9a0169f2a7) | llvmpipe (LLVM 23.1.2, 256 bits) | Mesa",
-    "note": "GPU software (CPU): OpenGL 4.6 (llvmpipe) + Vulkan lavapipe + WARP bawaan. Runner GitHub tanpa GPU fisik; 3D berat tetap lambat.",
-    "files": "opengl32.dll,libgallium_wgl.dll,vulkan_lvp.dll,vulkan-1.dll",
-    "adapters": "Microsoft Hyper-V Video",
-    "mode": "software"
-  },
-  "extras": {
-    "lightshot": "skip",
-    "translucent": "ok",
-    "wallpaper": "ok",
-    "wallpaper_file": "wallpaper.jpg",
-    "vscode": "skip",
-    "notepadpp": "skip",
-    "admin": true
+    "dir": "C:\\XyRDP\\grafis",
+    "debug": "",
+    "mesa": "26.2.4"
   },
   "akses": {
-    "mode": "tailscale",
     "tailscale": {
+      "ip": "100.120.217.98",
       "status": "ok",
       "note": "HP/PC harus login Tailscale pada tailnet yang sama. TCP 3389 harus diizinkan ACL.",
-      "ip": "",
-      "magicdns": "",
-      "hostname": "",
-      "funnel_addr": ""
-    }
+      "hostname": "rdpfree-3",
+      "magicdns": "rdpfree-3.tail316eb8.ts.net."
+    },
+    "mode": "tailscale"
   },
   "media": {
-    "wallpaper": "xyverse_configured_for_user_logon",
+    "audio_output": "rdp_playback_enabled",
     "microphone": "rdp_capture_enabled",
     "verification": "Login ulang, aktifkan mic di XyDesk dan izinkan Android. Uji Windows Settings > Sound > Input; kebijakan aktif bukan bukti capture end-to-end.",
-    "audio_output": "rdp_playback_enabled"
-  },
-  "game_environment": {
-    "hypervisor_present": true,
-    "runner": "github",
-    "play_tested": false,
-    "windows_server": true,
-    "os": "Microsoft Windows Server 2022 Datacenter"
+    "wallpaper": "xyverse_configured_for_user_logon"
   },
   "games": {
     "samp": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "minecraft_java": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
-    },
-    "minecraft_bedrock": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
+      "status": "disabled",
+      "note": "Tidak dipilih"
     },
     "roblox": {
-      "note": "Tidak dipilih",
-      "status": "disabled"
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    },
+    "minecraft_java": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
+    },
+    "minecraft_bedrock": {
+      "status": "disabled",
+      "note": "Tidak dipilih"
     }
   },
-  "heartbeat_at": "2026-10-11T04:54:09.4367001Z",
-  "stopped_at": "2026-10-11T04:58:46Z"
+  "game_environment": {
+    "os": "Microsoft Windows Server 2022 Datacenter",
+    "play_tested": false,
+    "hypervisor_present": true,
+    "runner": "github",
+    "windows_server": true
+  }
 }
